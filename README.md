@@ -1,4 +1,4 @@
-# 🌅 Gulf of Florida Sunset 6-Hour Loop
+# 🌅 Gulf of Florida Sunset 8-Hour Loop
 
 A beautiful relaxing beach sunset video optimized for **YouTube**, **Twitch**, **sleep sounds**, and video editors.
 
@@ -9,30 +9,29 @@ A beautiful relaxing beach sunset video optimized for **YouTube**, **Twitch**, *
 ## 🎥 Recommended FFmpeg Command (Best for YouTube)
 
 ```bash
-# High quality 6-hour seamless loop
+# High quality 8-hour seamless loop
 ffmpeg -stream_loop -1 -i "your_29s_sunset.mp4" \
-  -t 21600 \
+  -t 28800 \
   -c:v libx264 -preset slow -crf 18 \
   -vf "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,format=yuv420p" \
   -r 30 \
   -c:a aac -b:a 192k \
   -movflags +faststart \
-  -metadata title="Gulf of Florida Sunset 6 Hours - Relaxing Ocean Waves" \
-  florida_gulf_sunset_6hr_1080p.mp4
+  -metadata title="Gulf of Florida Sunset 8 Hours - Relaxing Ocean Waves" \
+  florida_gulf_sunset_8hr_1080p.mp4
 ```
 
-## For 4K (if your source supports it)
-Add `-s 3840x2160` or use higher resolution scaling.
+## For 4K
+Change scaling to 3840x2160 if your source is high-res.
 
-## 📝 YouTube Optimization Tips
-- **Title**: "6 Hours of Gulf of Florida Sunset with Gentle Waves 🌅 Relaxing Ocean Sounds"
-- **Thumbnail**: Use one of the frames (bright sunset)
+## 📝 YouTube Ready
+- **Title Suggestion**: "8 Hours of Gulf of Florida Sunset with Gentle Waves 🌅 Relaxing Ocean Sounds | Sleep & Study"
 - **Description**: See `youtube_description.txt`
-- **Tags**: relaxing music, sleep sounds, asmr, beach sunset, florida gulf coast, ocean waves, 6 hours
-- Enable loop in YouTube player for endless playback
+- **Tags**: relaxing, sleep sounds, asmr, florida beach, gulf sunset, ocean waves, 8 hours
 
-## Other Tools
-- **DaVinci Resolve** (free): Import clip → right-click → Loop → extend to 6 hours
-- **CapCut**: Auto loop feature
-- **Adobe Premiere**: Use nested sequence with loop
+## Download Ready-to-Use (if available in Releases)
+Check the **Releases** tab for pre-generated versions.
 
+## Alternative Methods
+- **In DaVinci Resolve**: Import → right-click clip → Modify → Loop → Set duration to 8 hours
+- **CapCut / Premiere**: Duplicate + loop the clip
