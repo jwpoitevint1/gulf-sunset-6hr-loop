@@ -1,0 +1,10 @@
+# Generated video files
+*.mp4
+*.mov
+*.mkv
+
+# FFmpeg logs
+*.log
+
+# macOS
+.DS_Store
